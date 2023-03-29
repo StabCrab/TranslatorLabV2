@@ -10,9 +10,10 @@
 #include <map>
 
 
-//E::= T | T = E | C
-//T ::= ++S | S
-//C::= S++ | I
+//E ::= ++S E1 | S E2 | I
+//E1 ::= ε | = E
+//E2 ::= ε | = E | ++
+
 
 enum class Token
 {
